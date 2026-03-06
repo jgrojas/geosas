@@ -13,7 +13,7 @@
                     <li><a href="{{ route('home') }}#services" class="hover:text-amber-400 transition-colors">Diseño personalizado</a></li>
                     <li><a href="{{ route('home') }}#services" class="hover:text-amber-400 transition-colors">Corte láser</a></li>
                     <li><a href="{{ route('home') }}#services" class="hover:text-amber-400 transition-colors">Grabado láser</a></li>
-                    <li><a href="{{ route('home') }}#services" class="hover:text-amber-400 transition-colors">MDF y acrílico (hasta 9 mm)</a></li>
+                    <li><a href="{{ route('home') }}#services" class="hover:text-amber-400 transition-colors">MDF y acrílico (hasta 12 mm)</a></li>
                     <li><a href="{{ route('home') }}#services" class="hover:text-amber-400 transition-colors">Prototipos y producción</a></li>
                 </ul>
             </div>

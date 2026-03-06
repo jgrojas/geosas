@@ -13,7 +13,7 @@ return [
 
     // Hero
     'hero_title' => 'Design, engraving and laser cutting',
-    'hero_subtitle' => 'From your idea to reality. We work with MDF and acrylic in different thicknesses up to 9 mm for custom projects.',
+    'hero_subtitle' => 'From your idea to reality. We work with MDF and acrylic in different thicknesses up to 12 mm for custom projects.',
     'hero_cta_quote' => 'Get a quote',
     'hero_cta_contact' => 'Discuss project',
 
@@ -26,7 +26,7 @@ return [
     'feature_laser_title' => 'Laser cutting and engraving',
     'feature_laser_desc' => 'Millimeter precision in cutting and engraving. From prototypes to production.',
     'feature_mdf_title' => 'MDF and acrylic',
-    'feature_mdf_desc' => 'Materials in different thicknesses up to 9 mm. We adapt to your project needs.',
+    'feature_mdf_desc' => 'Materials in different thicknesses up to 12 mm. We adapt to your project needs.',
     'feature_quality_title' => 'Quality',
     'feature_quality_desc' => 'Professional finishes and attention to detail in every piece.',
 
@@ -47,5 +47,5 @@ return [
     'gallery_subtitle' => 'Some of the work we have done in laser cutting and engraving.',
     'gallery_description' => 'We create art through the digital. Each piece is unique, designed with laser precision on MDF and acrylic to bring your ideas to life.',
     'footer_rights' => 'All rights reserved.',
-'about_text' => 'Specialists in design, engraving and laser cutting on MDF and acrylic. We work with different thicknesses up to 9 mm. We transform your ideas into precise pieces for creative projects, signage, furniture and more.',
+'about_text' => 'Specialists in design, engraving and laser cutting on MDF and acrylic. We work with different thicknesses up to 12 mm. We transform your ideas into precise pieces for creative projects, signage, furniture and more.',
 ];
