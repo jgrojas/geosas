@@ -60,16 +60,16 @@ COPY --from=frontend /app/public/build ./public/build
 # Completar autoload
 RUN composer dump-autoload --optimize
 
-# Configuración Nginx
-COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
-RUN mkdir -p /run/nginx
+# Configuración Nginx (reemplazar main config para evitar conflicto en Alpine)
+COPY docker/nginx.conf /etc/nginx/nginx.conf
+RUN mkdir -p /run/nginx /var/log/nginx
 
 # Supervisord
 COPY docker/supervisord.conf /etc/supervisord.conf
 
-# Entrypoint
+# Entrypoint (convertir CRLF a LF para Windows)
 COPY docker/entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 # Permisos

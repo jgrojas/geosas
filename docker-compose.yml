@@ -6,7 +6,7 @@ services:
     container_name: geosas-app
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
       - geosas-storage:/var/www/html/storage
       - geosas-database:/var/www/html/database
