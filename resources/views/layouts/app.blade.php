@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    @include('components.google-analytics')
     <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png">
     <link rel="apple-touch-icon" href="{{ asset('img/favicon.png') }}">
     <title>@yield('title', config('seo.default_title'))</title>

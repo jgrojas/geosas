@@ -63,6 +63,9 @@ GEO_WHATSAPP_NUMBER=573026948132
 GEO_ADDRESS="Cra 16 52-26, Bogotá, Colombia - Sector Galerías"
 GEO_EMAIL=geosasbogota@gmail.com
 
+# GA4 (visitas y clics a WhatsApp). Vacío en local.
+GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
+
 DB_CONNECTION=sqlite
 SESSION_DRIVER=file
 CACHE_STORE=file
