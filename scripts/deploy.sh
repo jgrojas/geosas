@@ -36,12 +36,17 @@ run_artisan() {
 
 maintenance_on() {
     log "Activar modo mantenimiento"
-    run_artisan down \
-        --render="$MAINTENANCE_RENDER" \
-        --retry=60 \
-        --refresh=15 \
-        --secret="${DEPLOY_SECRET:-geosas-deploy}" \
-        2>/dev/null || warn "No se pudo activar mantenimiento (¿primer despliegue?)"
+    local args=(down --retry=60 --refresh=15 --secret="${DEPLOY_SECRET:-geosas-deploy}")
+
+    if $COMPOSE ps --status running "$SERVICE" 2>/dev/null | grep -q "$SERVICE"; then
+        if $COMPOSE exec -T "$SERVICE" test -f /var/www/html/resources/views/errors/503.blade.php 2>/dev/null; then
+            args+=(--render="$MAINTENANCE_RENDER")
+        else
+            warn "Vista ${MAINTENANCE_RENDER} no está en la imagen actual; se usa pantalla de mantenimiento por defecto"
+        fi
+    fi
+
+    run_artisan "${args[@]}" || warn "No se pudo activar mantenimiento (¿primer despliegue?)"
 }
 
 maintenance_off() {
@@ -65,6 +70,11 @@ wait_for_health() {
 }
 
 log "Inicio despliegue en ${ROOT}"
+
+if [ -d .git ] && command -v git >/dev/null 2>&1; then
+    log "Actualizar código (git pull)"
+    git pull --ff-only || warn "git pull falló; continúo con el código local"
+fi
 
 maintenance_on || true
 
