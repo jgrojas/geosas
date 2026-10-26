@@ -33,9 +33,11 @@
     <script type="application/ld+json">
     {
         "@@context": "https://schema.org",
-        "@@type": "LocalBusiness",
+        "@@type": ["LocalBusiness", "ProfessionalService"],
         "name": "Geo Creaciones en Madera",
-        "description": "{{ config('seo.default_description') }}",
+        "alternateName": "Geo Creaciones",
+        "description": {{ json_encode(config('seo.default_description')) }},
+        "serviceType": ["Corte láser MDF", "Corte láser acrílico", "Grabado láser", "Diseño láser", "Señalética láser"],
         "url": "{{ url('/') }}",
         "image": "{{ asset(config('seo.og_image')) }}",
         "address": {

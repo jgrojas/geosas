@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Geo Creaciones en Madera - ' . __('messages.footer_tagline'))
+@section('title', config('seo.default_title'))
+@section('meta_description', config('seo.default_description'))
 
 @section('content')
 {{-- Hero con banner épico - inspirado en Corte Laser Colombia --}}

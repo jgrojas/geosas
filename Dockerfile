@@ -16,8 +16,9 @@ RUN npm run build
 
 # ============================================
 # Stage 2: PHP + Nginx application
+# PHP >= 8.2.35 (parche PHP2Shell CVE-2026-109618 / CVE-2026-109619)
 # ============================================
-FROM php:8.2-fpm-alpine
+FROM php:8.2.35-fpm-alpine
 
 # Instalar nginx y supervisord
 RUN apk add --no-cache \

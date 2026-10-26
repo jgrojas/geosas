@@ -12,7 +12,7 @@ return [
     'nav_lang_en' => 'English',
 
     // Hero
-    'hero_title' => 'Design, engraving and laser cutting',
+    'hero_title' => 'Laser cutting on MDF and acrylic in Bogota',
     'hero_subtitle' => 'From your idea to reality. We work with MDF and acrylic in different thicknesses up to 12 mm for custom projects.',
     'hero_cta_quote' => 'Get a quote',
     'hero_cta_contact' => 'Discuss project',

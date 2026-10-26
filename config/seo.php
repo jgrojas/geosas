@@ -2,10 +2,11 @@
 
 return [
     'site_name' => 'Geo Creaciones en Madera',
-    'default_title' => 'Diseño, Grabado y Corte Láser en MDF y Acrílico | Bogotá',
-    'default_description' => 'Geo Creaciones en Madera - Diseño, grabado y corte láser en MDF y acrílico. Diferentes espesores hasta 12 mm. Bogotá, Colombia. Cotizaciones por WhatsApp.',
-    'keywords' => 'corte láser, grabado láser, corte láser MDF, corte láser acrílico, diseño láser, corte láser Bogotá, grabado MDF, grabado acrílico, señalética láser, piezas MDF, corte láser Colombia, Geo Creaciones, Galerías Bogotá',
-    'keywords_en' => 'laser cutting, laser engraving, MDF laser cut, acrylic laser cut, laser design, laser cutting Bogota, MDF engraving, acrylic engraving, laser signage, laser cutting Colombia',
+    // Palabra clave primero (intención: corte láser MDF/acrílico + local)
+    'default_title' => 'Corte Láser MDF y Acrílico Bogotá | Diseño y Grabado',
+    'default_description' => 'Corte láser en MDF y acrílico en Bogotá. Diseño, grabado y piezas personalizadas hasta 12 mm. Sector Galerías. Cotización rápida por WhatsApp. Geo Creaciones en Madera.',
+    'keywords' => 'corte láser MDF, corte láser acrílico, corte laser mdf bogota, corte laser acrilico bogota, grabado láser MDF, grabado láser acrílico, corte láser Bogotá, diseño láser, corte láser personalizado, cotización corte láser, señalética láser, piezas MDF láser, corte láser Colombia, Galerías Bogotá, Geo Creaciones en Madera',
+    'keywords_en' => 'MDF laser cutting, acrylic laser cutting, laser cutting Bogota, MDF laser engraving, acrylic laser engraving, custom laser cutting, laser design Bogota, laser signage Colombia',
     'og_image' => 'img/hero-1.jpg',
     'twitter_card' => 'summary_large_image',
 ];

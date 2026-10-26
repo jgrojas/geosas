@@ -9,7 +9,7 @@ return [
     'nav_get_quote' => 'Solicitar cotización',
     'nav_lang_es' => 'Español',
     'nav_lang_en' => 'English',
-    'hero_title' => 'Diseño, grabado y corte láser',
+    'hero_title' => 'Corte láser en MDF y acrílico en Bogotá',
     'hero_subtitle' => 'De tu idea a la realidad. Trabajamos MDF y acrílico en diferentes espesores hasta 12 mm para proyectos personalizados.',
     'hero_cta_quote' => 'Solicitar cotización',
     'hero_cta_contact' => 'Consultar proyecto',
